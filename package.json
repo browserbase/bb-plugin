@@ -10,7 +10,10 @@
     "name": "Browserbase",
     "description": "Browse websites, extract page data, and automate web workflows with Browserbase.",
     "branding": {
-      "icon": "Globe"
+      "icon": "./assets/browserbase-icon.svg",
+      "logo": {
+        "light": "./assets/browserbase-logo.png"
+      }
     },
     "server": "./server.ts",
     "skills": [
