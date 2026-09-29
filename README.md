@@ -29,11 +29,10 @@ For a published Git tag, BB supports installation directly from this repository 
 
 Open **Settings → Installed plugins → Browserbase** and set **Browserbase API key**. The setting is secret and read on the server. Start a new BB thread after installation so the agent sees the new tools. Never put the key into source files or commit a credential-bearing URL.
 
-Try:
+Give your agent this prompt:
 
-> Use Browserbase to open https://example.com, extract its main heading, and close the session.
+> Use Browserbase to open https://browserbase-demo.com/ and select Search. Run the “Stripe trust center SOC 2 certifications” demo, and wait until “Searching the web…” disappears and numbered results appear. Then list the displayed titles and domains of results numbered 1, 2, and 3. If the search fails, report the error instead of listing suggested searches.
 
-The expected heading is **Example Domain**. Confirm the session is closed in the Browserbase dashboard. This live check requires credentials; the automated tests simulate Browserbase responses and do not create real browser sessions.
 
 ## Tools
 
@@ -60,6 +59,7 @@ Each BB thread has a separate MCP client and browser session. Calls in one threa
 
 `npm run typecheck` checks the backend against the installed SDK declarations. `npm test` exercises thread isolation, input validation, credential redaction, key changes, and cleanup. `npm run build` uses the installed `bb` CLI to generate the backend bundle. `bb plugin dev` rebuilds and reloads an installed local plugin during development.
 
+The repository contains no credentials. Keep `node_modules`, `dist`, local environment files, and scaffold backups out of Git.
 The repository contains no credentials. Keep `node_modules`, `dist`, local environment files, and scaffold backups out of Git. Licensed under the MIT License; see LICENSE.
 
 See the [Browserbase MCP documentation](https://docs.browserbase.com/integrations/mcp/setup) and [BB plugin guide](https://github.com/get-bb/bb/tree/main/plugins/bb-guide/skills/bb-plugin-authoring).
