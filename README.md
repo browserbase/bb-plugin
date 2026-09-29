@@ -31,9 +31,8 @@ Open **Settings → Installed plugins → Browserbase** and set **Browserbase AP
 
 Try:
 
-> Use Browserbase to open https://example.com, extract its main heading, and close the session.
+> Use Browserbase to open https://browserbase-demo.com/ and select Search. Run the “Stripe trust center SOC 2 certifications” demo, then list the displayed titles and domains of the search results numbered 1, 2, and 3. Close the browser session when finished.
 
-The expected heading is **Example Domain**. Confirm the session is closed in the Browserbase dashboard. This live check requires credentials; the automated tests simulate Browserbase responses and do not create real browser sessions.
 
 ## Tools
 
@@ -60,6 +59,6 @@ Each BB thread has a separate MCP client and browser session. Calls in one threa
 
 `npm run typecheck` checks the backend against the installed SDK declarations. `npm test` exercises thread isolation, input validation, credential redaction, key changes, and cleanup. `npm run build` uses the installed `bb` CLI to generate the backend bundle. `bb plugin dev` rebuilds and reloads an installed local plugin during development.
 
-The repository contains no credentials. Keep `node_modules`, `dist`, local environment files, and scaffold backups out of Git. Select and add the project's license before public release.
+The repository contains no credentials. Keep `node_modules`, `dist`, local environment files, and scaffold backups out of Git.
 
 See the [Browserbase MCP documentation](https://docs.browserbase.com/integrations/mcp/setup) and [BB plugin guide](https://github.com/get-bb/bb/tree/main/plugins/bb-guide/skills/bb-plugin-authoring).
