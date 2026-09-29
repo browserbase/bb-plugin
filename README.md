@@ -60,5 +60,6 @@ Each BB thread has a separate MCP client and browser session. Calls in one threa
 `npm run typecheck` checks the backend against the installed SDK declarations. `npm test` exercises thread isolation, input validation, credential redaction, key changes, and cleanup. `npm run build` uses the installed `bb` CLI to generate the backend bundle. `bb plugin dev` rebuilds and reloads an installed local plugin during development.
 
 The repository contains no credentials. Keep `node_modules`, `dist`, local environment files, and scaffold backups out of Git.
+The repository contains no credentials. Keep `node_modules`, `dist`, local environment files, and scaffold backups out of Git. Licensed under the MIT License; see LICENSE.
 
 See the [Browserbase MCP documentation](https://docs.browserbase.com/integrations/mcp/setup) and [BB plugin guide](https://github.com/get-bb/bb/tree/main/plugins/bb-guide/skills/bb-plugin-authoring).

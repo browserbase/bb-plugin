@@ -57,5 +57,6 @@
     "typecheck": "tsc --noEmit",
     "test": "node --test server.test.mjs",
     "build": "bb plugin build"
-  }
+  },
+  "license": "MIT"
 }
