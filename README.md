@@ -29,9 +29,9 @@ For a published Git tag, BB supports installation directly from this repository 
 
 Open **Settings → Installed plugins → Browserbase** and set **Browserbase API key**. The setting is secret and read on the server. Start a new BB thread after installation so the agent sees the new tools. Never put the key into source files or commit a credential-bearing URL.
 
-Try:
+Give your agent this prompt:
 
-> Use Browserbase to open https://browserbase-demo.com/ and select Search. Run the “Stripe trust center SOC 2 certifications” demo, then list the displayed titles and domains of the search results numbered 1, 2, and 3. Close the browser session when finished.
+> Use Browserbase to open https://browserbase-demo.com/ and select Search. Run the “Stripe trust center SOC 2 certifications” demo, and wait until “Searching the web…” disappears and numbered results appear. Then list the displayed titles and domains of results numbered 1, 2, and 3. If the search fails, report the error instead of listing suggested searches.
 
 
 ## Tools
