@@ -1,6 +1,8 @@
+Note: Demo and reference code only.
+
 # Browserbase for BB
 
-Browse websites, extract page data, and automate web workflows with Browserbase cloud browsers from a BB thread.
+Using Browserbase with BB, deploy agents that can browse websites, extract page data, and automate web workflows with Browserbase cloud browsers, all from a chat thread.
 
 ## Requirements
 
